@@ -58,7 +58,7 @@ docker ps --format "table {{.Image}}\t{{.Ports}}\t{{.Names}}"
 
 ![image](https://github.com/Ravi-352/app_containerization/assets/91112573/211967cd-fcc2-434f-88ef-5427b9403e4b)
 
-****Accessing the app using public ip of ec2 instance with port 80 -
+**Accessing the app using public ip of ec2 instance with port 80 -**
 
 ![image](https://github.com/Ravi-352/app_containerization/assets/91112573/3bf13cdd-a622-437a-b6bf-e7f81810323c)
 

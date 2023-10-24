@@ -1,4 +1,4 @@
-PART-2: TESTING THE IMAGE IN REMOTE SERVER (AWS EC2 instance)
+PART-2: TESTING THE IMAGE IN REMOTE SERVER (Free tier AWS EC2 instance)
 
 Create AWS EC2 instance - with "ubuntu" image
 
@@ -39,6 +39,39 @@ sudo systemctl start docker
 Once docker is up, pull the required image from dockerhub - 
 
 ![image](https://github.com/Ravi-352/app_containerization/assets/91112573/4dcbcdc3-c6b3-4672-9d53-9df170ced960)
+
+
+Now check if the image is pulled successfully - 
+```
+docker images
+```
+
+Now create the container for the image --
+```
+docker run --name myblog_demo1 -p 80:8080 -d ravi352/rk_personal_apps:myblog_demo.1.0.0
+```
+
+Check if the container is up and active - 
+```
+docker ps --format "table {{.Image}}\t{{.Ports}}\t{{.Names}}"
+```
+
+![image](https://github.com/Ravi-352/app_containerization/assets/91112573/211967cd-fcc2-434f-88ef-5427b9403e4b)
+
+****Accessing the app using public ip of ec2 instance with port 80 -
+
+![image](https://github.com/Ravi-352/app_containerization/assets/91112573/3bf13cdd-a622-437a-b6bf-e7f81810323c)
+
+![image](https://github.com/Ravi-352/app_containerization/assets/91112573/7acc735e-1978-4c39-9dc6-8911b7694741)
+
+```
+#Now stop the container
+Docker stop <container id>
+```
+To avoid unnecessary costing, terminate the EC2 Instance as soon the requirement is fulfilled as this is just for demo purpose.
+
+
+
 
 
 

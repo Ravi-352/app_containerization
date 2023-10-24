@@ -1,4 +1,4 @@
-![image](https://github.com/Ravi-352/app_containerization/assets/91112573/94a12836-b843-4159-89db-88ebdc26eadc)PART-1: CREATING DOCKER IMAGE AND PUSHING IT TO DOCKER HUB
+PART-1: CREATING DOCKER IMAGE AND PUSHING IT TO DOCKER HUB  
 
 Clone the git repo of the nodejs app - https://github.com/Ravi-352/app_containerization.git
 
@@ -6,11 +6,11 @@ Clone the git repo of the nodejs app - https://github.com/Ravi-352/app_container
 cd blog_containerization
 ```
 You should be able to see following file structure - 
-![image](https://github.com/Ravi-352/app_containerization/assets/91112573/3b96350c-da66-433e-866a-824bafda7735)
+![image](https://github.com/Ravi-352/app_containerization/assets/91112573/94a12836-b843-4159-89db-88ebdc26eadc)
 
-Dockerfile helps in assembling the docker image for creating container in which the nodejs app will run
+Dockerfile helps in assembling the docker image for creating container in which the nodejs app will run  
 
-Command to create docker image: 
+Command to create docker image:  
 
 ```
 sudo docker build -t <dockerhub repo path where image needs to be stored:tag> .
@@ -49,6 +49,7 @@ docker login
 docker push <docker image>
 #In this case -
 sudo docker push ravi352/rk_personal_apps:myblog_demo.1.0.0
+```
 
 Now verify in dockerhub by logging in -
 ![image](https://github.com/Ravi-352/app_containerization/assets/91112573/cf87af98-7ab3-4502-8038-152b5cc28d27)

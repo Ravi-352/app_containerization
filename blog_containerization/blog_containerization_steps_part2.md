@@ -1,4 +1,4 @@
-PART-2: TESTING THE IMAGE IN REMOTE SERVER (Free tier AWS EC2 instance)
+**PART-2: TESTING THE IMAGE IN REMOTE SERVER (Free tier AWS EC2 instance)**
 
 Create AWS EC2 instance - with "ubuntu" image
 

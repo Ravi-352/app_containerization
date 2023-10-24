@@ -34,7 +34,7 @@ Now check docker status and start if not started -
 systemctl status docker
 sudo systemctl start docker
 ```
-![image](https://github.com/Ravi-352/app_containerization/assets/91112573/42873a05-f124-436c-bf1d-9657ffe308bb)
+
 
 Once docker is up, pull the required image from dockerhub - 
 
